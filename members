@@ -1,0 +1,4 @@
+#!/bin/bash
+grp=$1
+
+echo `getent group $grp | awk -F: '{print $4}`
